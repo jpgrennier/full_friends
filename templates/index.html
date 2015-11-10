@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>Friends</title>
+  <title>Full Friends</title>
 </head>
 <body>
   <h1>These are all my friends!</h1>
@@ -8,6 +8,9 @@
     <p>First Name: {{friend['first_name']}}</p>
     <p>Last Name: {{friend['last_name']}}</p>
     <p>Occupation: {{friend['occupation']}}</p>
+    <form action ="/friends/{{friend['id']}}/edit" method='GET'>
+      <button>Edit</button>
+    </form>
     <form action="/friends/{{friend['id']}}/delete" method='POST'>
       <button>Delete</button>
     </form>  
